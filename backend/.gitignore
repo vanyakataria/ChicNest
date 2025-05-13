@@ -1,0 +1,8 @@
+# Ignore all node_modules directories in the project
+**/node_modules/
+
+# Ignore all .env files in the project
+**/.env
+
+# macOS system file
+.DS_Store
