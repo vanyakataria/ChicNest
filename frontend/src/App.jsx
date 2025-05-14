@@ -19,10 +19,13 @@ import Verify from './pages/Verify'
 
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <div>
       <ToastContainer />
+      <div className='px-9 sm:px-[5vw] md:px-[7vw] lg:px-[0vw] bg-pastelPink'>
       <Navbar />
       <SearchBar />
+      </div>
+      <div className='px-9 sm:px-[5vw] md:px-[7vw] lg:px-[6vw] bg-roseBlush'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collection' element={<Collection />} />
@@ -35,7 +38,11 @@ const App = () => {
         <Route path='/orders' element={<Orders />} />
         <Route path='/verify' element={<Verify />} />
       </Routes>
+      </div>
+      <div className='px-9 sm:px-[5vw] md:px-[7vw] lg:px-[0vw] bg-pastelPink'>
       <Footer />
+      </div>
+
     </div>
   )
 }
